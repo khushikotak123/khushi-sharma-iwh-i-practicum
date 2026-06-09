@@ -1,38 +1,36 @@
 doctype html
 
 html
-head
-title= title
+  head
+    title= title
 
-body
+  body
 
-```
-h1 Add Plant
+    h1 Add Plant
 
-a(href="/") Return to the homepage
+    a(href="/") Return to the homepage
 
-br
-br
+    br
+    br
 
-form(action="/update-cobj" method="POST")
+    form(action="/update-cobj" method="POST")
 
-  div
-    label Name:
-    input(type="text" name="name" required)
+      div
+        label Name:
+        input(type="text" name="name" required)
 
-  br
+      br
 
-  div
-    label Species:
-    input(type="text" name="species" required)
+      div
+        label Species:
+        input(type="text" name="species" required)
 
-  br
+      br
 
-  div
-    label Age:
-    input(type="number" name="age" required)
+      div
+        label Age:
+        input(type="number" name="age" required)
 
-  br
+      br
 
-  button(type="submit") Submit
-```
+      button(type="submit") Submit
