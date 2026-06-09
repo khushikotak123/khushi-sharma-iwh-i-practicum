@@ -1,0 +1,28 @@
+doctype html
+
+html
+  head
+    title= title
+
+  body
+
+    h1 Plants Table
+
+    a(href="/update-cobj") Add to this table
+
+    br
+    br
+
+    table(border="1")
+
+      tr
+        th Name
+        th Species
+        th Age
+
+      each plant in data
+
+        tr
+          td= plant.properties.name
+          td= plant.properties.species
+          td= plant.properties.age
